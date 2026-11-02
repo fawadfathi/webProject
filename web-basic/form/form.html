@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="form-container">
+      <header class="form-header">
+        <h1>Create an Account</h1>
+        <p>Fill in the information below to get started.</p>
+      </header>
+
+      <form action="#" method="post">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="firstName"
+              placeholder="John"
+              autocomplete="given-name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="lastName"
+              placeholder="Doe"
+              autocomplete="family-name"
+              required
+            />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Minimum 8 characters"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="birth-date">Date of Birth</label>
+            <input
+              type="date"
+              id="birth-date"
+              name="birthDate"
+              autocomplete="bday"
+              required
+            />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+              <option value="" selected disabled>Select your country</option>
+              <option value="afghanistan">Afghanistan</option>
+              <option value="canada">Canada</option>
+              <option value="united-states">United States</option>
+              <option value="united-kingdom">United Kingdom</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="bio">About Yourself (Optional)</label>
+            <textarea
+              id="bio"
+              name="bio"
+              placeholder="Tell us a little about yourself..."
+              maxlength="500"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-group full-width">
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="accepted"
+              required
+            />
+            <label for="terms">
+              I agree to the Terms of Service and Privacy Policy.
+            </label>
+          </div>
+
+          <div class="full-width">
+            <button class="submit-button" type="submit">Create Account</button>
+          </div>
+        </div>
+      </form>
+
+      <footer class="form-footer">
+        Already have an account?
+        <a href="login.html">Sign in</a>
+      </footer>
+    </main>
+  </body>
+</html>

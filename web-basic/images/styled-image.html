@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Image</title>
+    <style>
+      .landscape-image {
+        width: 200px;
+        height: 200px;
+        border: 4px solid black;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 5px 5px 15px gray;
+        margin: 5px;
+      }
+
+      .landscape-image-transition {
+        transition: transform 0.3s ease;
+      }
+
+      .landscape-image-transition:hover {
+        transform: scale(1.1);
+      }
+
+      .filtered-image {
+        filter: grayscale(100%);
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A circular image with a border, cover fit, and shadow -->
+    <img
+      class="landscape-image"
+      src="assets/landscape.jpg"
+      alt="A beautiful landscape"
+    />
+
+    <!-- smooth scaling transition on hover  -->
+    <img
+      class="landscape-image-transition landscape-image"
+      src="assets/landscape.jpg"
+      alt="A beautiful landscape"
+    />
+
+    <!-- grayscale filter and reduces image opacity -->
+    <img
+      class="filtered-image landscape-image"
+      src="assets/landscape.jpg"
+      alt="A beautiful landscape"
+    />
+  </body>
+</html>

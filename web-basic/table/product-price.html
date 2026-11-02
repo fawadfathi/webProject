@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Prices Table</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+        padding: 30px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #1e293b;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      th,
+      td {
+        padding: 14px;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #1e293b;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f1f5f9;
+      }
+
+      tr:hover {
+        background-color: #dbeafe;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Product Price Table: Displays product information in rows and columns,
+     including product IDs, names, categories, prices, and available quantities.
+     <th> defines column headers, <tr> defines rows,
+     and <td> contains individual product details. -->
+
+    <h1>Product Prices</h1>
+
+    <table>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Price ($)</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Laptop</td>
+        <td>Electronics</td>
+        <td>800</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Keyboard</td>
+        <td>Accessories</td>
+        <td>25</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Mouse</td>
+        <td>Accessories</td>
+        <td>15</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Monitor</td>
+        <td>Electronics</td>
+        <td>200</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>105</td>
+        <td>Headphones</td>
+        <td>Audio</td>
+        <td>50</td>
+        <td>15</td>
+      </tr>
+    </table>
+  </body>
+</html>
